@@ -8,7 +8,7 @@ Here are few examples/extension of bouncing ball that you can use as a starting 
 - [Multiple-ball Bouncing Ball][multiple], [demo][demo2]
 - [HTML5 Text Bouncing Balls][text], [demo][demo3]
 
-Few minor hacks:
+####Few minor hacks:
 
 - change ball color, size
 - change number of balls
@@ -17,18 +17,18 @@ Few minor hacks:
 - __add friction__
 - __ball collision__ 
 
-Some ideas for extension:
+####Some ideas for extension:
 
 - [Ping-pong][pong]
 - [Brick Breaker][brick-breaker]
 
-Hints and References:
+####Hints and References:
 
 - Collision Detection
 	- [Reference][col_ref1] 
     - [demo][collision]
 
-Remixes:
+####Remixes:
 - [Love][remix1] 
 
 [single]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/single-ball
