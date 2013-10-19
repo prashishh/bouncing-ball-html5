@@ -1,0 +1,128 @@
+<!--
+==========================================================
+WELCOME TO THE ANIMATE THE WEB ACTIVITY TEMPLATE 
+Use this template to create your own version of your bouncing ball.
+Edit the HTML/javascript below to get started with your animated version of the bouncing ball.
+Code comments will help you with hints and guides.
+Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
+
+# part of Mozilla Festival 2013 scrum activity
+==========================================================
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bouncy Ball - Multiple Ball</title>
+</head>
+<body>
+    
+    <!-- Create an instance of <canvas> element where we can start drawing -->
+	<canvas id="bouncing-ball-box" width="300px" height="300px" style="border: solid 1px"></canvas>  
+    
+    <script>
+		
+        // get reference to the canvas element with id = bouncing-ball-box
+        var canvas = document.getElementById("bouncing-ball-box").getContext("2d");
+        
+        /* CHANGE */
+        var HEIGHT = 300;
+        var WIDTH = 300;
+        var ballno = 9;	// TOTAL NUMBER OF BALLS
+
+        var ballArray = [];	// keeps track of all the balls that were generated
+        var ballcount = 0;	// count of current ball
+        var ballrad = 10;	// small hack for surface collision
+        
+        
+        function draw() {
+            /*
+            A ball object with following properties:
+            	(x,y) - random values within the range 2 to 200
+                dx - random value by which the x-cordinate of the ball increments/decrements after every timeout
+                dy - random value by which the y-cordinate of the ball increments/decrements after every timeout
+                radius - fixed radius (10)
+                color - random color generator
+                time - ball's lifespan
+            */
+            
+        	var ball = {
+                		x : Math.abs(getRandom(2, 200)),
+                		y : Math.abs(getRandom(2, 200)),
+                		dx : Math.abs(getRandom(1,5)),
+                		dy : Math.abs(getRandom(1,5)),
+                		radius : 10,
+                		color : '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6),
+                		time : 0
+            			}
+            
+            // pushes the ball object only upto ballno 
+            // increments the value of ballcount after every insertion
+            if(ballcount < ballno) {
+				ballArray.push(ball);
+            	ballcount = ballcount +1;
+            }
+            
+            // clears the previous screen for illusion of animation
+            clear();
+            
+            /*
+            - iterates through each ball and changes the x and y values
+            - checks if the ball bounces off the wall and changes the dx and dy value accordingly
+            */
+            for( var i = 0; i < ballArray.length; i++ ) {
+                ball = ballArray[i];
+                circle(ball.x, ball.y, ball.radius, ball.color);
+                
+                // checks if ball craches with the side walls
+                if(ball.x + ball.dx + ballrad > WIDTH  || ball.x + ball.dx - ballrad < 0)
+                    ball.dx = -ball.dx;
+                
+                // checks if ball crashes with the top and bottom walls
+                if(ball.y + ball.dy - ballrad < 0 || ball.y + ball.dy + ballrad > HEIGHT)
+                    ball.dy = -ball.dy;
+                
+                // changes the direction of the ball by incrementing the ball's x and y values by dx and dy respectively.
+            	ball.x += ball.dx;
+            	ball.y += ball.dy;
+                
+            }
+        }
+        
+        /*
+        	clears the screen
+        */
+        function clear() {
+            canvas.clearRect(0, 0, 300, 300);
+        }
+        
+        /*
+        	creates a ball at (x,y) position with random radius 10 and random color.
+            fillStyle will change the canvas's current color
+            
+        */
+        function circle(x, y, radius, color) {
+            canvas.fillStyle = color;
+            canvas.beginPath();
+            canvas.arc(x, y, radius, 0, Math.PI*2, true);
+            canvas.closePath();
+            canvas.fill();
+        }
+        
+        /*
+        	returns a random value with the range min and max
+        */
+        function getRandom( min, max ) {
+        	return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        
+        
+        /*
+        	Calls the draw() function every 30 milliseconds, creating a illusion of movement
+        	usage: setInterval(function, timeout)
+        */
+        setInterval(draw, 30);
+        
+    </script>
+</body>
+</html>
