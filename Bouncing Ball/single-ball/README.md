@@ -1,12 +1,7 @@
 ### Single-ball Bouncing Ball
 
-A single ball bounces around the canvas box. The index.html file is well commented and easy to understand.
+List of remixes of [Single-ball Bouncing Ball][single]
 
-Few minor hacks:
+_Need any help? ping me at @prashishh or shoot me an email at prashishh@gmail.com_
 
-- change ball color
-- change size of canvas
-- change size of ball
-- __add blocks or obstructions__
-- __add elasticity effect__
-- __add friction__
+[single]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/single-ball

@@ -6,7 +6,7 @@ Here are few examples/extension of bouncing ball that you can use as a starting 
 
 - [Single-ball Bouncing Ball][single]
 - [Multiple-ball Bouncing Ball][multiple]
-- [Text-ball Bouncing Balls][text-ball]
+- [HTML5 Text Bouncing Balls][text]
 
 Few minor hacks:
 
@@ -22,9 +22,8 @@ Some ideas for extension:
 - [Brick Breaker][brick-breaker]
 
 
-
 [single]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/single-ball
 [multiple]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/multiple-balls
-[text-ball]: 
+[text]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/text-bouncing-balls
 [pong]: http://en.wikipedia.org/wiki/Pong#Gameplay
 [brick-breaker]: http://taptitude.wikia.com/wiki/Brick_Breaker
