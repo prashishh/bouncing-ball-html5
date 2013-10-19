@@ -15,15 +15,23 @@ Few minor hacks:
 - __add blocks or obstructions__
 - __add elasticity effect__
 - __add friction__
-
+- __ball collision__ 
 Some ideas for extension:
 
 - [Ping-pong][pong]
 - [Brick Breaker][brick-breaker]
 
+Hints and References:
+
+- Collision Detection
+	- [Reference][col_ref1] 
+    - [demo][collision]
 
 [single]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/single-ball
 [multiple]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/multiple-balls
 [text]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/text-bouncing-balls
 [pong]: http://en.wikipedia.org/wiki/Pong#Gameplay
 [brick-breaker]: http://taptitude.wikia.com/wiki/Brick_Breaker
+[collision]: https://developer.mozilla.org/ru/demos/detail/modeling-elastic-collisions-w-html5-and-javascript
+[col_ref1]: http://blog.shameerc.com/2011/10/simple-html5-canvas-game.html
+
