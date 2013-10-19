@@ -16,6 +16,7 @@ Few minor hacks:
 - __add elasticity effect__
 - __add friction__
 - __ball collision__ 
+
 Some ideas for extension:
 
 - [Ping-pong][pong]
@@ -27,6 +28,9 @@ Hints and References:
 	- [Reference][col_ref1] 
     - [demo][collision]
 
+Remixes:
+	- [Love][remix1] 
+
 [single]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/single-ball
 [multiple]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/multiple-balls
 [text]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/text-bouncing-balls
@@ -37,3 +41,4 @@ Hints and References:
 [demo1]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/single-ball/index.html
 [demo2]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/multiple-balls/index.html
 [demo3]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/index.html
+[remix1]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/Remixes/love/index.html
