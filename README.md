@@ -7,7 +7,7 @@ I have posted some ideas that people can make using the samples provided.
 
 *Scrums are sets of community-run makes and activities that are based on making or building something together.*
 
-_This is a part of __Build and Teach the Web__ track at MozFest! Keep the web wild through hands-on making with innovative tools and teaching the web as a community._
+_This is a part of **Build and Teach the Web** track at MozFest! Keep the web wild through hands-on making with innovative tools and teaching the web as a community._
 
 
 [mozfest]: http://mozillafestival.org/
