@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bouncy Ball</title>
+</head>
+<body>
+	<canvas id="bouncing-ball-box" width="300" height="300" style="border: solid 1px" tabindex="1"></canvas>  
+    
+    <script>
+        
+        // ->
+        var canvas = document.getElementById("bouncing-ball-box").getContext("2d");
+        var ballArray = [];
+        var ballcount = 0;
+        var ballno = 9;
+        var ballrad = 10;
+        var HEIGHT = 300;
+        var WIDTH = 300;
+        
+        function draw() {
+        	var ball = {
+                		x : Math.abs(getRandom(2, 200)),
+                		y : Math.abs(getRandom(2, 200)),
+                		dx : Math.abs(getRandom(1,5)),
+                		dy : Math.abs(getRandom(1,5)),
+                		radius : 10,
+                		color : '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6),
+                		time : 0
+            			}
+            
+            if(ballcount < ballno) 
+				ballArray.push(ball);
+            
+            ballcount = ballcount +1;
+            clear();
+            
+            for( var i = 0; i < ballArray.length; i++ ) {
+                ball = ballArray[i];
+                circle(ball.x, ball.y, ball.radius, ball.color);
+                
+                if(ball.x + ball.dx + ballrad > WIDTH  || ball.x + ball.dx - ballrad < 0)
+                    ball.dx = -ball.dx;
+                if(ball.y + ball.dy - ballrad < 0 || ball.y + ball.dy + ballrad > HEIGHT)
+                    ball.dy = -ball.dy;
+                   
+            	ball.x += ball.dx;
+            	ball.y += ball.dy;
+                
+            }
+        }
+        
+        function clear() {
+            canvas.clearRect(0, 0, 300, 300);
+        }
+        
+        function circle(x, y, radius, color) {
+            canvas.fillStyle = color;
+            canvas.beginPath();
+            canvas.arc(x, y, radius, 0, Math.PI*2, true);
+            canvas.closePath();
+            canvas.fill();
+        }
+        
+        function getRandom( min, max ) {
+        	return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        
+        intervalId = setInterval(draw, 30);
+        
+        
+    </script>
+</body>
+</html>
