@@ -4,11 +4,13 @@ This is a pretty cool Bouncing Ball animation.
 
 __Instruction__: Mouse over the Google logo to move the balls around, and then watch them reassemble
 
+This example has been taken from [html5canvastutorials][link1].
+
 [DEMO][demo]
 
 Few minor hacks:
 
-- change the text
+- change letters
 - change color
 
 Remixes:
@@ -18,3 +20,4 @@ _Need any help? ping me at @prashishh or shoot me an email at prashishh@gmail.co
 
 [demo]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/index.html
 [demo1]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/Remixes/love/index.html
+[link1]: http://www.html5canvastutorials.com/labs/html5-canvas-google-bouncing-balls/

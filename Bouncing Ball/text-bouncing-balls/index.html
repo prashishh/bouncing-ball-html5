@@ -154,6 +154,8 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
           y: mouseY
         };
       }
+        
+        
       function updateBalls(canvas, balls, timeDiff, mousePos) {
         var context = canvas.getContext('2d');
         var collisionDamper = 0.3;
@@ -261,6 +263,7 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
         this.origY = y;
         this.radius = 10;
       }
+        
       function animate(canvas, balls, lastTime, mousePos) {
         var context = canvas.getContext('2d');
 
@@ -311,6 +314,7 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
         mousePos.x = 9999;
         mousePos.y = 9999;
       });
+        
       animate(canvas, balls, time, mousePos);
 
     </script>
