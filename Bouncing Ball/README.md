@@ -29,7 +29,7 @@ Hints and References:
     - [demo][collision]
 
 Remixes:
-	- [Love][remix1] 
+- [Love][remix1] 
 
 [single]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/single-ball
 [multiple]: https://github.com/prashishh/bouncing-ball-html5/tree/master/Bouncing%20Ball/multiple-balls
