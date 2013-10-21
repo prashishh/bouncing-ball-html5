@@ -12,6 +12,10 @@ Here are few examples/extension of bouncing ball that you can use as a starting 
 
 - change ball color, size
 - change number of balls
+- move ball from one point to another
+- move ball from one point to another with a trail point
+
+
 - __add blocks or obstructions__
 - __add elasticity effect__
 - __add friction__
