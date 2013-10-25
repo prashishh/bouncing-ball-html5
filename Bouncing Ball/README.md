@@ -2,6 +2,11 @@
 
 This is a classic example of a HTML5 canvas game. The bouncing ball is a fundamental concept to many game development logics and can be easily modified build lot of other games like - ping-pong, brick breaker etc.
 
+#### Start Remixing NOW (thimble links)!!
+- [Single-ball Bouncing Ball][remixlink1]
+- [Multiple-ball Bouncing Ball][remixlink2]
+- [HTML5 Text Bouncing Balls][remixlink3]
+
 Here are few examples/extension of bouncing ball that you can use as a starting point.
 
 - [Single-ball Bouncing Ball][single], [demo][demo1]
@@ -46,3 +51,6 @@ Here are few examples/extension of bouncing ball that you can use as a starting 
 [demo2]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/multiple-balls/index.html
 [demo3]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/index.html
 [remix1]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/Remixes/love/index.html
+[remixlink1]: https://avk.makes.org/thimble/bouncy-ball-single-ball
+[remixlink2]: https://prashishh.makes.org/thimble/bouncy-ball-multiple-ball
+[remixlink3]: https://prashishh.makes.org/thimble/html5-text-bouncing-balls
