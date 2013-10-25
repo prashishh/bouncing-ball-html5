@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <!--
 ==========================================================
 WELCOME TO THE ANIMATE THE WEB ACTIVITY TEMPLATE 
@@ -13,6 +12,7 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
 ==========================================================
 -->
 
+<!DOCTYPE HTML>
 <html>
   <head>
     <style>
@@ -23,7 +23,7 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
     </style>
   </head>
   <body>
-    <canvas id="myCanvas" width="700" height="200" style="border: solid 1px"></canvas>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
     <script>
       window.requestAnimFrame = (function(callback) {
         return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
@@ -39,91 +39,99 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
         var red = '#EF2B36';
         var yellow = '#FFC636';
         var green = '#02A817';
-          
-        var o = 115;
-        var z = 215;
-        
-        var y = 40;
-        var l = 60;
 
-       	//m
-        balls.push(new Ball(54, y + 61, 0, 0, red));
-        balls.push(new Ball(51, y + 80, 0, 0, red));
-        balls.push(new Ball(51, y + 99, 0, 0, red));
-        balls.push(new Ball(50, y + 118, 0, 0, red));
-        balls.push(new Ball(71, y + 70, 0, 0, red));
-        balls.push(new Ball(84, y + 83, 0, 0, red));
-        balls.push(new Ball(92, y + 98, 0, 0, red));
-        balls.push(new Ball(103, y + 83, 0, 0, red));
-        balls.push(new Ball(113, y + 67, 0, 0, red));
-        balls.push(new Ball(130, y + 60, 0, 0, red));
-        balls.push(new Ball(133, y + 78, 0, 0, red));
-        balls.push(new Ball(133, y + 97, 0, 0, red));
-        balls.push(new Ball(135, y + 116, 0, 0, red));
+        // G
+        balls.push(new Ball(173, 63, 0, 0, blue));
+        balls.push(new Ball(158, 53, 0, 0, blue));
+        balls.push(new Ball(143, 52, 0, 0, blue));
+        balls.push(new Ball(130, 53, 0, 0, blue));
+        balls.push(new Ball(117, 58, 0, 0, blue));
+        balls.push(new Ball(110, 70, 0, 0, blue));
+        balls.push(new Ball(102, 82, 0, 0, blue));
+        balls.push(new Ball(104, 96, 0, 0, blue));
+        balls.push(new Ball(105, 107, 0, 0, blue));
+        balls.push(new Ball(110, 120, 0, 0, blue));
+        balls.push(new Ball(124, 130, 0, 0, blue));
+        balls.push(new Ball(139, 136, 0, 0, blue));
+        balls.push(new Ball(152, 136, 0, 0, blue));
+        balls.push(new Ball(166, 136, 0, 0, blue));
+        balls.push(new Ball(174, 127, 0, 0, blue));
+        balls.push(new Ball(179, 110, 0, 0, blue));
+        balls.push(new Ball(166, 109, 0, 0, blue));
+        balls.push(new Ball(156, 110, 0, 0, blue));
 
-        //o
-        balls.push(new Ball(92 + o, y + 61, 0, 0, red));
-        balls.push(new Ball(107 + o, y + 70, 0, 0, red));
-        balls.push(new Ball(112 + o, y + 87, 0, 0, red));
-        balls.push(new Ball(110 + o, y + 105, 0, 0, red));
-        balls.push(new Ball(97 + o, y + 118, 0, 0, red));
-        balls.push(new Ball(78 + o, y + 118, 0, 0, red));
-        balls.push(new Ball(66 + o, y + 105, 0, 0, red));
-        balls.push(new Ball(59 + o, y + 88, 0, 0, red));
-        balls.push(new Ball(66 + o, y + 72, 0, 0, red));
-        balls.push(new Ball(78 + o, y + 62, 0, 0, red));
-		
-          
-        // z
-        balls.push(new Ball(z + 50, y + 61, 0, 0, red));
-        balls.push(new Ball(z + 68, y + 63, 0, 0, red));
-        balls.push(new Ball(z + 86, y + 62, 0, 0, red));
-        balls.push(new Ball(z + 77, y + 80, 0, 0, red));
-        balls.push(new Ball(z + 63, y + 92, 0, 0, red));
-        balls.push(new Ball(z + 50, y + 102, 0, 0, red));
-        balls.push(new Ball(z + 45, y + 119, 0, 0, red));
-        balls.push(new Ball(z + 63, y + 120, 0, 0, red));
-        balls.push(new Ball(z + 80, y + 119, 0, 0, red));
-        
-        // i
-        balls.push(new Ball(z + 132, y + 24, 0, 0, red));
-        balls.push(new Ball(z + 132, y + 63, 0, 0, red));
-        balls.push(new Ball(z + 132, y + 80, 0, 0, red));
-        balls.push(new Ball(z + 133, y + 98, 0, 0, red));
-        balls.push(new Ball(z + 134, y + 116, 0, 0, red));
+        // O
+        balls.push(new Ball(210, 81, 0, 0, red));
+        balls.push(new Ball(197, 91, 0, 0, red));
+        balls.push(new Ball(196, 103, 0, 0, red));
+        balls.push(new Ball(200, 116, 0, 0, red));
+        balls.push(new Ball(209, 127, 0, 0, red));
+        balls.push(new Ball(223, 130, 0, 0, red));
+        balls.push(new Ball(237, 127, 0, 0, red));
+        balls.push(new Ball(244, 114, 0, 0, red));
+        balls.push(new Ball(242, 98, 0, 0, red));
+        balls.push(new Ball(237, 86, 0, 0, red));
+        balls.push(new Ball(225, 81, 0, 0, red));
 
-		// l
-        balls.push(new Ball(z + 183, y + 24, 0, 0, red));
-        balls.push(new Ball(z + 183, y + 42, 0, 0, red));
-        balls.push(new Ball(z + 184, y + 60, 0, 0, red));
-        balls.push(new Ball(z + 184, y + 78, 0, 0, red));
-        balls.push(new Ball(z + 185, y + 96, 0, 0, red));
-        balls.push(new Ball(z + 186, y + 115, 0, 0, red));
-        balls.push(new Ball(z + 203, y + 116, 0, 0, red));
-		
-        
-        // l
-        balls.push(new Ball(z + l + 183, y + 24, 0, 0, red));
-        balls.push(new Ball(z + l + 183, y + 42, 0, 0, red));
-        balls.push(new Ball(z + l + 184, y + 60, 0, 0, red));
-        balls.push(new Ball(z + l + 184, y + 78, 0, 0, red));
-        balls.push(new Ball(z + l + 185, y + 96, 0, 0, red));
-        balls.push(new Ball(z + l + 186, y + 115, 0, 0, red));
-        balls.push(new Ball(z + l + 203, y + 116, 0, 0, red));
-        
-          
-        // a
-        balls.push(new Ball(z + l + 238, y + 60, 0, 0, red));
-        balls.push(new Ball(z + l + 253, y + 50, 0, 0, red));
-        balls.push(new Ball(z + l + 270, y + 56, 0, 0, red));
-        balls.push(new Ball(z + l + 274, y + 74, 0, 0, red));
-        balls.push(new Ball(z + l + 275, y + 92, 0, 0, red));
-        balls.push(new Ball(z + l + 271, y + 109, 0, 0, red));
-        balls.push(new Ball(z + l + 256, y + 111, 0, 0, red));
-        balls.push(new Ball(z + l + 239, y + 105, 0, 0, red));
-        balls.push(new Ball(z + l + 240, y + 90, 0, 0, red));
-        balls.push(new Ball(z + l + 257, y + 85, 0, 0, red));
+        // O
+        var oOffset = 67;
+        balls.push(new Ball(oOffset + 210, 81, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 197, 91, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 196, 103, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 200, 116, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 209, 127, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 223, 130, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 237, 127, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 244, 114, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 242, 98, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 237, 86, 0, 0, yellow));
+        balls.push(new Ball(oOffset + 225, 81, 0, 0, yellow));
 
+        // G
+        balls.push(new Ball(370, 80, 0, 0, blue));
+        balls.push(new Ball(358, 79, 0, 0, blue));
+        balls.push(new Ball(346, 79, 0, 0, blue));
+        balls.push(new Ball(335, 84, 0, 0, blue));
+        balls.push(new Ball(330, 98, 0, 0, blue));
+        balls.push(new Ball(334, 111, 0, 0, blue));
+        balls.push(new Ball(348, 116, 0, 0, blue));
+        balls.push(new Ball(362, 109, 0, 0, blue));
+        balls.push(new Ball(362, 94, 0, 0, blue));
+        balls.push(new Ball(355, 128, 0, 0, blue));
+        balls.push(new Ball(340, 135, 0, 0, blue));
+        balls.push(new Ball(327, 142, 0, 0, blue));
+        balls.push(new Ball(325, 155, 0, 0, blue));
+        balls.push(new Ball(339, 165, 0, 0, blue));
+        balls.push(new Ball(352, 166, 0, 0, blue));
+        balls.push(new Ball(367, 161, 0, 0, blue));
+        balls.push(new Ball(371, 149, 0, 0, blue));
+        balls.push(new Ball(366, 137, 0, 0, blue));
+
+        // L
+        balls.push(new Ball(394, 49, 0, 0, green));
+        balls.push(new Ball(381, 50, 0, 0, green));
+        balls.push(new Ball(391, 61, 0, 0, green));
+        balls.push(new Ball(390, 73, 0, 0, green));
+        balls.push(new Ball(392, 89, 0, 0, green));
+        balls.push(new Ball(390, 105, 0, 0, green));
+        balls.push(new Ball(390, 118, 0, 0, green));
+        balls.push(new Ball(388, 128, 0, 0, green));
+        balls.push(new Ball(400, 128, 0, 0, green));
+
+        // E
+        balls.push(new Ball(426, 101, 0, 0, red));
+        balls.push(new Ball(436, 98, 0, 0, red));
+        balls.push(new Ball(451, 95, 0, 0, red));
+        balls.push(new Ball(449, 83, 0, 0, red));
+        balls.push(new Ball(443, 78, 0, 0, red));
+        balls.push(new Ball(430, 77, 0, 0, red));
+        balls.push(new Ball(418, 82, 0, 0, red));
+        balls.push(new Ball(414, 93, 0, 0, red));
+        balls.push(new Ball(412, 108, 0, 0, red));
+        balls.push(new Ball(420, 120, 0, 0, red));
+        balls.push(new Ball(430, 127, 0, 0, red));
+        balls.push(new Ball(442, 130, 0, 0, red));
+        balls.push(new Ball(450, 125, 0, 0, red));
 
         return balls;
       }
@@ -146,6 +154,8 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
           y: mouseY
         };
       }
+        
+        
       function updateBalls(canvas, balls, timeDiff, mousePos) {
         var context = canvas.getContext('2d');
         var collisionDamper = 0.3;
@@ -253,6 +263,7 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
         this.origY = y;
         this.radius = 10;
       }
+        
       function animate(canvas, balls, lastTime, mousePos) {
         var context = canvas.getContext('2d');
 
@@ -303,6 +314,7 @@ Need help? ping me at @prashishh or shoot me an email at prashishh@gmail.com
         mousePos.x = 9999;
         mousePos.y = 9999;
       });
+        
       animate(canvas, balls, time, mousePos);
 
     </script>
