@@ -53,4 +53,4 @@ Here are few examples/extension of bouncing ball that you can use as a starting 
 [remix1]: http://prashishh.github.io/bouncing-ball-html5/Bouncing%20Ball/text-bouncing-balls/Remixes/love/index.html
 [remixlink1]: https://avk.makes.org/thimble/bouncy-ball-single-ball
 [remixlink2]: https://prashishh.makes.org/thimble/bouncy-ball-multiple-ball
-[remixlink3]: https://prashishh.makes.org/thimble/html5-text-bouncing-balls
+[remixlink3]: https://prashishh.makes.org/thimble/mozilla
